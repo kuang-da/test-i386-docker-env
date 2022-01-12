@@ -25,11 +25,14 @@ docker run --rm --platform linux/386 kuangda/i386 uname -m
 
 Then I tried two other images. Interestingly, the kernels of them are actually 32-bit.
 
+This is from [centos5-i386](https://github.com/castisdev/docker-centos5-i386/pkgs/container/centos5-i386)
 
 ```bash
 docker run -it --rm ghcr.io/castisdev/centos5-i386:1.0
 # i686
 ```
+
+This is from the DockerHub [arm32 repository](https://hub.docker.com/u/arm32v6).
 
 ```bash
 docker run --rm --platform arm32/v6 arm32v6/bash uname -m   
